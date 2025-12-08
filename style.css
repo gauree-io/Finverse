@@ -132,7 +132,7 @@ body {
         display: none; 
     }
 }
-/* About Page Styles */
+
 
 .about-hero {
     background: #f5f5f5;
@@ -176,7 +176,7 @@ body {
     margin-bottom: 8px;
     font-size: 16px;
 }
-/* Services page styles */
+
 
 .services-hero {
   background: #f8fafb;
@@ -194,7 +194,7 @@ body {
   margin-bottom: 0;
 }
 
-/* grid of service cards */
+
 .services-list {
   padding: 30px 0 60px;
 }
@@ -213,7 +213,7 @@ body {
   border-radius: 10px;
 }
 
-/* responsive */
+
 @media (max-width: 900px) {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -224,4 +224,45 @@ body {
   .services-grid {
     grid-template-columns: 1fr;
   }
+}
+
+
+/* Dropdown container inside nav */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown button */
+.dropbtn {
+  background-color: #0a84c1;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+/* Dropdown content hidden by default */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 220px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+  z-index: 10;
+  border-radius: 4px;
+}
+
+/* Dropdown links styling */
+.dropdown-content a {
+  color: black;
+  padding: 10px 14px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
 }
